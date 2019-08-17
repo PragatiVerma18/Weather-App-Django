@@ -36,7 +36,8 @@
                             </div>
                         </div>
                         {% if message %}
-                            <div class="notification {{ message_class }}">{{ message }}</div>
+                            <div class="notification {{ message_class }}">{{ message }}<button class="del-msg delete" onclick="document.getElementsByClassName('notification')[0].style.display='none'"></button></div>
+                            
                         {% endif %}
                     </form>
                 </div>
